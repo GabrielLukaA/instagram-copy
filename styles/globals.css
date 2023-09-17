@@ -2,26 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.textFont {
+  color: #171717;
+  text-align: center;
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.3px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.fontText {
+  text-align: center;
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.15px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.fontFooter {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+.fontFooterBold {
+  text-align: center;
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.005px;
+}
+.shadowFooter {
+  box-shadow: 0px -0.33px 0px 0px rgba(60, 60, 67, 0.29);
+}
+
+.inputShadow {
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.oi input::placeholder {
+  color: #262626;
+}
+
+.fontInput {
+
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.15px;
+}
+
+.forgotPass {
+  color: #3797ef;
+
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.15px;
+}
+.orFont {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.stroke{
+  stroke-width: 0.33px;
+  stroke: rgba(0, 0, 0, 0.20);
 }
