@@ -8,7 +8,8 @@ import SignUpTexto from "../components/SignUpTexto";
 export default function Home() {
   return (
     <>
-      <div className="w-[375px] bg-[#fff] h-[812px] flex flex-col justify-between">
+    <div className="flex justify-center w-screen">
+    <div className="w-[375px] bg-[#fff] h-[812px] flex flex-col justify-between">
         <Header />
         <section className="flex flex-col items-center justify-center w-full px-[34px]">
           <img src="instaLogo.svg" alt="" className="mb-[52px]" />
@@ -24,6 +25,7 @@ export default function Home() {
           <IphoneMenu />
         </footer>
       </div>
+    </div>
     </>
   );
 }
