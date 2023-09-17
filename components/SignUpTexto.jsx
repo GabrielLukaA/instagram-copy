@@ -8,7 +8,7 @@ function SignUpTexto(props) {
           props.first ? "fontFooter" : "fontInput text-[#000] opacity-40"
         }
       >
-        Don't have an account?
+        Don&#39;t have an account?
       </p>
       <p
         className={
