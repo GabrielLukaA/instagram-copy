@@ -4,6 +4,7 @@ import Link from "next/link";
 import ButtonLogin from "../components/ButtonLogin";
 import TextoLogin from "../components/TextoLogin";
 import SignUpTexto from "../components/SignUpTexto";
+import Input from "../components/Input";
 
 export default function SignIn() {
   function back() {}
@@ -33,18 +34,10 @@ export default function SignIn() {
               <div className="flex flex-col gap-[19px] w-full">
                 <div className="flex flex-col gap-3 w-full">
                   <div className="oi">
-                    <input
-                      type="text"
-                      className=" w-full bg-[#FAFAFA] rounded-md py-[13.5px] px-4 inputShadow fontInput"
-                      placeholder="asad_khasanov"
-                    />
-                  </div>
+                    <Input placeholder="asad_khasanov" type="text" enable />
 
-                  <input
-                    type="text"
-                    className="w-full bg-[#FAFAFA] rounded-md py-[13.5px] px-4 inputShadow fontInput text-[#262626]"
-                    placeholder="Password"
-                  />
+                  </div>
+                  <Input placeholder="Password" type="password" />
                 </div>
                 <div className="w-full flex justify-end">
                   <p className="forgotPass">Forgot Password?</p>
